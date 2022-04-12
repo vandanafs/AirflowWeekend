@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster
+FROM python:3.9-slim-buster
 
 RUN apt-get update -yqq \
     	&& apt-get upgrade -yqq \
@@ -8,8 +8,8 @@ RUN apt-get update -yqq \
 	libffi-dev \
 	libpq-dev \
 	libssl-dev \
-	python3-pandas \
-	python3-numpy
+	python3.9-pandas \
+	python3.9-numpy
 
 ENV PYTHONPATH="${PYTHONPATH}:/usr/lib/python3/dist-packages"
 
